@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.list-counter-square {
+  list-style: none;
+  counter-reset: list;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.list-counter-square>li {
+  position: relative;
+  display: block;
+  height: 2rem;
+  line-height: 2rem;
+  margin-left: 2rem;
+  margin-bottom: .25rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #fff;
+  background: #CD853F;
+  white-space: nowrap;
+}
+.list-counter-square>li:last-child {
+  margin-bottom: 0;
+}
+.list-counter-square>li::before {
+  content: counter(list);
+  counter-increment: list;
+  position: absolute;
+  left: -2rem;
+  top: 0;
+  bottom: 0;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  background: #AA621C;
+  border-right: 2px solid #884021;
+}
+.displ {
+  display: none;
+}
+.checkbox {
+    float: left !important;
+}
+.tabwidthfrage {
+	width: 40%;
+}
+.tabwidthantwort {
+	width: 55%;
+}
