@@ -2,9 +2,9 @@
 class Dirweg   
 {    
       
-    public $browdirurl; // браузерный путь к директории  
-    public $serdirurl; // серверный путь к директории  
-    public $file; // название файла  
+    public $browdirurl;
+    public $serdirurl;
+    public $file;
   
     public function __construct(){  
         $pieces = explode('/', $_SERVER['PHP_SELF']);      
