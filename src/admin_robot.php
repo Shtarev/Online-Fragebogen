@@ -128,7 +128,7 @@ function mysql_test($url, $mysqli){
 		header( 'Location: '.$url);
 	}
 	else {
-		die('<font color="#FF0000">Datenbankfehler.</font><br>Beschreibung des Fehlers: <font color="#0066FF"><b>'.$mysqli->error.'</b></font><br>Код ошибки: <font color="#0066FF"><b>'.$mysqli->errno).'</b></font>';
+		die('<font color="#FF0000">Datenbankfehler.</font><br>Beschreibung des Fehlers: <font color="#0066FF"><b>'.$mysqli->error.'</b></font><br>Fehler Kod: <font color="#0066FF"><b>'.$mysqli->errno).'</b></font>';
 	}
 }
 function dirweg($weg=true){
